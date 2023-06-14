@@ -37,15 +37,15 @@
   <body>
 
   <div style="position: fixed; top: 10px; width: 100%; text-align: center; z-index: 1; color: grey">
-        <button>Запустити</button> - якщо на Драго чорний квадрат
+        <button>Запустити</button> - якщо на Драг чорний квадрат
     </div>
- <a-video id="#myVideo" position="0 0 0" height="0.552" width="0.552" rotation="0 0 0" transparent="true"></a-video>
+
 
     <a-scene mindar-image="imageTargetSrc: https://gituseron.github.io/red_building_test/red_targets.mind;" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
       <a-assets>
             <img id="pyzhyk_book" src="https://gituseron.github.io/red_building_test/a_pyzhyk_circle.png" />
             <img id="333_door" src="https://gituseron.github.io/red_building_test/4_heart_transp.png" />
-            <video id="myVideo" src="https://gituseron.github.io/red_building_test/3_drago_compress.mp4" preload loop></video>
+            <video id="myVideo" src="https://gituseron.github.io/red_building_test/3_drago_compress.mp4"></video>
         <a-asset-item id="red_door" src="https://gituseron.github.io/red_building_test/2_gothere_333.glb"></a-asset-item>
         <a-asset-item id="red_full" src="https://gituseron.github.io/red_building_test/1_istfac_wait.glb"></a-asset-item>
       </a-assets>
@@ -60,8 +60,10 @@
       <a-entity mindar-image-target="targetIndex: 2">
       <a-gltf-model src="#red_door" rotation="90 0 0 " position="0 -0.25 0" scale="0.007 0.007 0.007" animation-mixer>
       </a-entity>
+ <a-video id="#myVideo" position="0 0 0" height="0.552" width="0.552" rotation="0 0 0" preload loop></video>
       <a-entity mindar-image-target="targetIndex: 3">
  <a-plane class="clickable" material="src: #myVideo; opacity: 0.5; transparent: true" video-controller>
+
         </a-plane>
       </a-entity>
       <a-entity mindar-image-target="targetIndex: 4">
