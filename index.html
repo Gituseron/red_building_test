@@ -44,6 +44,7 @@
             <video id="myVideo" src="https://gituseron.github.io/red_building_test/3_drago_compress.mp4"></video>
         <a-asset-item id="red_door" src="https://gituseron.github.io/red_building_test/2_gothere_333.glb"></a-asset-item>
         <a-asset-item id="red_full" src="https://gituseron.github.io/red_building_test/1_istfac_wait.glb"></a-asset-item>
+        <a-asset-item id="text"></a-asset-item>
       </a-assets>
 
       <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
@@ -59,8 +60,8 @@
  <a-video id="#myVideo" position="0 0 0" height="0.552" width="0.552" rotation="0 0 0" preload loop></video>
       <a-entity mindar-image-target="targetIndex: 3" id="target">
  <a-plane class="clickable" material="src: #myVideo; opacity: 0.9; transparent: true" video-controller></a-plane>
- <a-plane> <div style="position: fixed; top: 10px; width: 100%; text-align: center; z-index: 1; color: grey">
-        <button>Натисни</button>, якщо портрет не рухаc </div></a-plane>
+ <a-plane id="#text"> <div style="position: fixed; top: 10px; width: 100%; text-align: center; z-index: 1; color: grey">
+        <button>Натисни</button>, якщо портрет не рухаci </div></a-plane>
       </a-entity>
       <a-entity mindar-image-target="targetIndex: 4">
  <a-plane src="#333_door" position="0 0 0" height="0.552" width="0.552"rotation="0 0 0" transparent="true"></a-plane>
