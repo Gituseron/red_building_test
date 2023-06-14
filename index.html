@@ -37,11 +37,6 @@
 
   <body>
 
-  <div style="position: fixed; top: 10px; width: 100%; text-align: center; z-index: 1; color: grey">
-        <button>Натисни</button>, якщо портрет не руха
-    </div>
-
-
     <a-scene mindar-image="imageTargetSrc: https://gituseron.github.io/red_building_test/red_targets.mind;" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
       <a-assets>
             <img id="pyzhyk_book" src="https://gituseron.github.io/red_building_test/a_pyzhyk_circle.png" />
@@ -63,9 +58,9 @@
       </a-entity>
  <a-video id="#myVideo" position="0 0 0" height="0.552" width="0.552" rotation="0 0 0" preload loop></video>
       <a-entity mindar-image-target="targetIndex: 3" id="target">
- <a-plane class="clickable" material="src: #myVideo; opacity: 0.9; transparent: true" video-controller>
-
-        </a-plane>
+ <a-plane class="clickable" material="src: #myVideo; opacity: 0.9; transparent: true" video-controller></a-plane>
+ <a-plane style="position: fixed; top: 10px; width: 100%; text-align: center; z-index: 1; color: grey">
+        <button>Натисни</button>, якщо портрет не руха ></a-plane>
       </a-entity>
       <a-entity mindar-image-target="targetIndex: 4">
  <a-plane src="#333_door" position="0 0 0" height="0.552" width="0.552"rotation="0 0 0" transparent="true"></a-plane>
